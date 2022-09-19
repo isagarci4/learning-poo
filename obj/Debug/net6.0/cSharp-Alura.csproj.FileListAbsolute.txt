@@ -1,0 +1,15 @@
+/home/isadora/Aprendizado/cSharp-Alura/bin/Debug/net6.0/cSharp-Alura
+/home/isadora/Aprendizado/cSharp-Alura/bin/Debug/net6.0/cSharp-Alura.deps.json
+/home/isadora/Aprendizado/cSharp-Alura/bin/Debug/net6.0/cSharp-Alura.runtimeconfig.json
+/home/isadora/Aprendizado/cSharp-Alura/bin/Debug/net6.0/cSharp-Alura.dll
+/home/isadora/Aprendizado/cSharp-Alura/bin/Debug/net6.0/ref/cSharp-Alura.dll
+/home/isadora/Aprendizado/cSharp-Alura/bin/Debug/net6.0/cSharp-Alura.pdb
+/home/isadora/Aprendizado/cSharp-Alura/obj/Debug/net6.0/cSharp-Alura.csproj.AssemblyReference.cache
+/home/isadora/Aprendizado/cSharp-Alura/obj/Debug/net6.0/cSharp-Alura.GeneratedMSBuildEditorConfig.editorconfig
+/home/isadora/Aprendizado/cSharp-Alura/obj/Debug/net6.0/cSharp-Alura.AssemblyInfoInputs.cache
+/home/isadora/Aprendizado/cSharp-Alura/obj/Debug/net6.0/cSharp-Alura.AssemblyInfo.cs
+/home/isadora/Aprendizado/cSharp-Alura/obj/Debug/net6.0/cSharp-Alura.csproj.CoreCompileInputs.cache
+/home/isadora/Aprendizado/cSharp-Alura/obj/Debug/net6.0/cSharp-Alura.dll
+/home/isadora/Aprendizado/cSharp-Alura/obj/Debug/net6.0/ref/cSharp-Alura.dll
+/home/isadora/Aprendizado/cSharp-Alura/obj/Debug/net6.0/cSharp-Alura.pdb
+/home/isadora/Aprendizado/cSharp-Alura/obj/Debug/net6.0/cSharp-Alura.genruntimeconfig.cache
