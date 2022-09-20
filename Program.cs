@@ -33,13 +33,21 @@ class Program{
         // Tipagem por referência
         // conta1 = conta2; // aponta para o mesmo endereço de memória, por isso agora se comparadas o resultado será TRUE
 
-        Console.WriteLine("Saldo atual: " + conta1.saldo);
-        bool saque = conta1.Sacar(50);
-        Console.WriteLine("Saque realizado? " + saque);
-        Console.WriteLine("Saldo pós saque: " + conta1.saldo);
+        // Console.WriteLine("Saldo atual: " + conta1.saldo);
+        // bool saque = conta1.Sacar(50);
+        // Console.WriteLine("Saque realizado? " + saque);
+        // Console.WriteLine("Saldo pós saque: " + conta1.saldo);
+        // conta1.Depositar(60);
+        // Console.WriteLine("Saldo pós deposito: " + conta1.saldo);
 
-        conta1.Depositar(60);
-        Console.WriteLine("Saldo pós deposito: " + conta1.saldo);
+        Console.WriteLine("Saldo conta 2 pré transferencia: " + conta2.saldo);
+        Console.WriteLine("Saldo conta 1 pré transferencia: " + conta1.saldo);
+
+        bool transferencia = conta1.Transferir(50, conta2);
+
+        Console.WriteLine("A transferência deu certo? " + transferencia);
+        Console.WriteLine("Saldo conta 2 pos transferencia: " + conta2.saldo);
+        Console.WriteLine("Saldo conta 1 pos transferencia: " + conta1.saldo);
 
         Console.ReadKey();
     }
