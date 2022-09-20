@@ -1,7 +1,10 @@
+using bytebank.Titular;
+
 namespace bytebank{
     public class ContaCorrente 
     {
         // Corpo da classe
+        public Cliente titular;
         public string conta;
         public int numero_agencia;
         public string nome_agencia;

@@ -1,4 +1,5 @@
-namespace bytebank{
+namespace bytebank.Titular
+{
     public class Cliente
     {
         public string nome;
