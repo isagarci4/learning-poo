@@ -56,6 +56,15 @@ class Program{
         cliente.cpf = "43680971818";
         cliente.profissao = "Programadora C#";
 
+        ContaCorrente conta3 = new ContaCorrente();
+        conta3.titular = cliente;
+        conta3.conta = "2513252-X";
+        conta3.numero_agencia = 35;
+        conta3.nome_agencia = "Agência Central";
+
+        Console.WriteLine(cliente.nome);
+        Console.WriteLine(conta3.titular.nome);
+
         Console.ReadKey();
     }
 }
