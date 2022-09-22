@@ -9,16 +9,16 @@ class Program{
 
         ContaCorrente conta1 = new ContaCorrente();
         //conta1.titular = "André Silva";
-        conta1.conta = "10123-X";
-        conta1.numero_agencia = 23;
-        conta1.nome_agencia = "Agência Central";
+        conta1.Conta = "10123-X";
+        conta1.Numero_agencia = 23;
+        conta1.Nome_agencia = "Agência Central";
         conta1.Saldo = 100;
 
         ContaCorrente conta2 = new ContaCorrente();
         //conta2.titular = "Isadora Garcia";
-        conta2.conta = "111999-X";
-        conta2.numero_agencia = 58;
-        conta2.nome_agencia = "Agência Central";
+        conta2.Conta = "111999-X";
+        conta2.Numero_agencia = 58;
+        conta2.Nome_agencia = "Agência Central";
         conta2.Saldo = 100;
 
         // Console.WriteLine("Titular: " + conta1.titular);
@@ -59,14 +59,18 @@ class Program{
         ContaCorrente conta3 = new ContaCorrente();
         conta3.titular = new Cliente(); 
         conta3.titular.Nome = "André Silva"; // essa referência seria nula se a classe Cliente não fosse chamada asssim
-        conta3.conta = "2513252-X";
-        conta3.numero_agencia = 35;
-        conta3.nome_agencia = "Agência Central";
+        conta3.Conta = "2513252-X";
+        conta3.Numero_agencia = 35;
+        conta3.Nome_agencia = "Agência Central";
 
-        Cliente sara = new Cliente();
+        Cliente sarah = new Cliente();
+        sarah.Nome = "Sara Silva";
+
         ContaCorrente conta4 = new ContaCorrente();
         conta4.Saldo = 100;
-        conta4.Titular =  sara;
+        conta4.Titular =  sarah;
+        conta4.Numero_agencia = -10;
+        conta4.Conta = "";
 
 
         Console.WriteLine("Saldo "+ conta4.Saldo);

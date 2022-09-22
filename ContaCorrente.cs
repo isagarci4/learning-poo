@@ -6,9 +6,9 @@ namespace bytebank{
         // Corpo da classe
         public Cliente titular{get; set;}
         public Cliente Titular{get; set;}
-        public string conta{get; set;}
-        public int numero_agencia{get; set;}
-        public string nome_agencia{get; set;}
+        public string Conta{get; set;}
+        public int Numero_agencia{get; set;}
+        public string Nome_agencia{get; set;}
         private double saldo; // o atributo privado só pode ser acessado através de um método
 
         // Método(comportamento de uma classe) sacar
