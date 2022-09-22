@@ -8,7 +8,7 @@ namespace bytebank{
         public string conta;
         public int numero_agencia;
         public string nome_agencia;
-        public double saldo;
+        private double saldo; // o atributo só pode ser acessado através dos métodos
 
         // Método(comportamento de uma classe) sacar
         public bool Sacar(double valor)
@@ -43,6 +43,14 @@ namespace bytebank{
                 destino.saldo = destino.saldo + valor;
                 return true;
             }
+        }
+        
+        public void DefinirSaldo(double valor)
+        {
+            if(valor < 0){
+                return;
+            }
+            saldo = valor;
         }
     }
 }

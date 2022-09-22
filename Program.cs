@@ -63,6 +63,9 @@ class Program{
         conta3.numero_agencia = 35;
         conta3.nome_agencia = "Agência Central";
 
+        ContaCorrente conta4 = new ContaCorrente();
+        conta4.DefinirSaldo(-10);
+
         Console.ReadKey();
     }
 }
