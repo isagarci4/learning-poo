@@ -51,19 +51,17 @@ class Program{
         // Console.WriteLine("Saldo conta 2 pos transferencia: " + conta2.saldo);
         // Console.WriteLine("Saldo conta 1 pos transferencia: " + conta1.saldo);
 
-        Cliente cliente = new Cliente();
-        cliente.nome = "André Silva";
-        cliente.cpf = "43680971818";
-        cliente.profissao = "Programadora C#";
+        // Cliente cliente = new Cliente();
+        // cliente.nome = "André Silva";
+        // cliente.cpf = "43680971818";
+        // cliente.profissao = "Programadora C#";
 
         ContaCorrente conta3 = new ContaCorrente();
-        conta3.titular = cliente;
+        conta3.titular = new Cliente(); 
+        conta3.titular.nome = "André Silva"; // essa referência seria nula se a classe Cliente não fosse chamada asssim
         conta3.conta = "2513252-X";
         conta3.numero_agencia = 35;
         conta3.nome_agencia = "Agência Central";
-
-        Console.WriteLine(cliente.nome);
-        Console.WriteLine(conta3.titular.nome);
 
         Console.ReadKey();
     }
