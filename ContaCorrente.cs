@@ -4,10 +4,11 @@ namespace bytebank{
     public class ContaCorrente 
     {
         // Corpo da classe
-        public Cliente titular;
-        public string conta;
-        public int numero_agencia;
-        public string nome_agencia;
+        public Cliente titular{get; set;}
+        public Cliente Titular{get; set;}
+        public string conta{get; set;}
+        public int numero_agencia{get; set;}
+        public string nome_agencia{get; set;}
         private double saldo; // o atributo privado só pode ser acessado através de um método
 
         // Método(comportamento de uma classe) sacar
@@ -45,18 +46,32 @@ namespace bytebank{
             }
         }
         
-        public void DefinirSaldo(double valor)
-        {
-            if(valor < 0){
-                return;
-            }else{
-                saldo = saldo + valor;
-            }
-        }
+        // public void SetSaldo(double valor)
+        // {
+        //     if(valor < 0){
+        //         return;
+        //     }else{
+        //         saldo = saldo + valor;
+        //     }
+        // }
 
-        public double ObterSaldo()
+        // public double GetSaldo()
+        // {
+        //     return saldo;
+        // }
+
+        public double Saldo
         {
-            return saldo;
+            get{
+                return saldo;
+            }
+            set{
+                if(value < 0)
+                {
+                    return;
+                }
+                saldo = value;
+            }
         }
     }
 }

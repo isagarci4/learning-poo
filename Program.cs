@@ -12,14 +12,14 @@ class Program{
         conta1.conta = "10123-X";
         conta1.numero_agencia = 23;
         conta1.nome_agencia = "Agência Central";
-        conta1.DefinirSaldo(100);
+        conta1.Saldo = 100;
 
         ContaCorrente conta2 = new ContaCorrente();
         //conta2.titular = "Isadora Garcia";
         conta2.conta = "111999-X";
         conta2.numero_agencia = 58;
         conta2.nome_agencia = "Agência Central";
-        conta2.DefinirSaldo(100);
+        conta2.Saldo = 100;
 
         // Console.WriteLine("Titular: " + conta1.titular);
         // Console.WriteLine("Conta: " + conta1.conta);
@@ -58,15 +58,18 @@ class Program{
 
         ContaCorrente conta3 = new ContaCorrente();
         conta3.titular = new Cliente(); 
-        conta3.titular.nome = "André Silva"; // essa referência seria nula se a classe Cliente não fosse chamada asssim
+        conta3.titular.Nome = "André Silva"; // essa referência seria nula se a classe Cliente não fosse chamada asssim
         conta3.conta = "2513252-X";
         conta3.numero_agencia = 35;
         conta3.nome_agencia = "Agência Central";
 
+        Cliente sara = new Cliente();
         ContaCorrente conta4 = new ContaCorrente();
-        conta4.DefinirSaldo(-10);
+        conta4.Saldo = 100;
+        conta4.Titular =  sara;
 
-        Console.WriteLine("Saldo "+ conta4.ObterSaldo());
+
+        Console.WriteLine("Saldo "+ conta4.Saldo);
 
         Console.ReadKey();
     }
